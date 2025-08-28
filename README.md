@@ -3,13 +3,6 @@
 This is a **GUI-based Cryptography Utility** built with Python’s **Tkinter**.  
 It allows users to **encrypt, decrypt, and hash text/files** with multiple classical cryptography techniques.
 
----
-
-## 📸 GUI Preview
-
-![Cryptographic Tool GUI](baaa65f8-4e54-4c23-acb6-ba1521a01d74.png)
-
----
 
 ## 📂 Project Structure
 

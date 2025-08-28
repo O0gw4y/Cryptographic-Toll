@@ -21,7 +21,6 @@ Python version: **Python 3.8+ recommended**
 
 Dependencies listed in `requirements.txt`:
 
-```text
 tkinter   # GUI framework (usually bundled with Python)
 hashlib   # Standard library for hashing
 (Note: tkinter may need to be installed separately on Linux.)

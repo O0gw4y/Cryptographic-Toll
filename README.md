@@ -5,6 +5,12 @@ It allows users to **encrypt, decrypt, and hash text/files** with multiple class
 
 ---
 
+## 📸 GUI Preview
+
+![Cryptographic Tool GUI](baaa65f8-4e54-4c23-acb6-ba1521a01d74.png)
+
+---
+
 ## 📂 Project Structure
 
 📁 your-project-folder/  
@@ -21,101 +27,109 @@ Python version: **Python 3.8+ recommended**
 
 Dependencies listed in `requirements.txt`:
 
+```text
 tkinter   # GUI framework (usually bundled with Python)
 hashlib   # Standard library for hashing
-(Note: tkinter may need to be installed separately on Linux.)
+```
 
-🖥️ How to Run
-✅ On Windows:
-Open PowerShell / CMD and navigate to your project folder:
+*(Note: `tkinter` may need to be installed separately on Linux.)*
 
-powershell
-Copy code
-cd "C:\path\to\your\project"
-Create a virtual environment (optional but recommended):
+---
 
-powershell
-Copy code
-python -m venv .env
-.\.env\Scripts\activate
-Install dependencies:
+## 🖥️ How to Run
 
-powershell
-Copy code
-pip install -r requirements.txt
-Run the tool:
+### ✅ On **Windows**:
 
-powershell
-Copy code
-python crypto_tool.py
-Or double-click run_crypto_tool.bat.
+1. Open **PowerShell / CMD** and navigate to your project folder:
 
-✅ On Kali Linux / Ubuntu:
-Open Terminal and navigate to your project folder:
+   ```powershell
+   cd "C:\path\to\your\project"
+   ```
 
-bash
-Copy code
-cd /path/to/your/project
-(Optional) Create virtual environment:
+2. Create a virtual environment (optional but recommended):
 
-bash
-Copy code
-python3 -m venv .env
-source .env/bin/activate
-Install dependencies:
+   ```powershell
+   python -m venv .env
+   .\.env\Scripts\activate
+   ```
 
-bash
-Copy code
-pip install -r requirements.txt
-Run the tool:
+3. Install dependencies:
 
-bash
-Copy code
-python3 crypto_tool.py
-📊 Output
+   ```powershell
+   pip install -r requirements.txt
+   ```
+
+4. Run the tool:
+
+   ```powershell
+   python crypto_tool.py
+   ```
+
+   Or double-click **`run_crypto_tool.bat`**.
+
+---
+
+### ✅ On **Kali Linux / Ubuntu**:
+
+1. Open Terminal and navigate to your project folder:
+
+   ```bash
+   cd /path/to/your/project
+   ```
+
+2. (Optional) Create virtual environment:
+
+   ```bash
+   python3 -m venv .env
+   source .env/bin/activate
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the tool:
+
+   ```bash
+   python3 crypto_tool.py
+   ```
+
+---
+
+## 📊 Output
+
 The GUI provides:
 
-Encrypted/Decrypted text (Caesar, ROT13, Atbash)
+* **Encrypted/Decrypted text** (Caesar, ROT13, Atbash)  
+* **MD5 Hash results** for text or files  
+* Copy button to save output to clipboard  
 
-MD5 Hash results for text or files
+---
 
-Copy button to save output to clipboard
+## 🔍 Features
 
-📸 Screenshots (placeholders):
+* **Caesar Cipher** → Encrypt/Decrypt with shift (1–25)  
+* **ROT13 Cipher** → Quick reversible text scrambling  
+* **Atbash Cipher** → Simple substitution (A ↔ Z, B ↔ Y, etc.)  
+* **MD5 Hashing** → Text hashing + File checksum calculation  
+* **Dark Theme GUI** with modern design  
+* **Clipboard Copy Button** for output  
+* **Status Bar** for real-time progress  
+* **Keyboard Shortcuts**:  
+  - `F5` → Process  
+  - `Esc` → Clear fields  
 
+---
 
+## 🛠 Troubleshooting
 
+* If GUI doesn’t launch, ensure you’re running **Python 3.8+**.  
+* On Linux, you may need to install Tkinter manually:  
 
-🔍 Features
-Caesar Cipher → Encrypt/Decrypt with shift (1–25)
+  ```bash
+  sudo apt-get install python3-tk
+  ```  
 
-ROT13 Cipher → Quick reversible text scrambling
-
-Atbash Cipher → Simple substitution (A ↔ Z, B ↔ Y, etc.)
-
-MD5 Hashing → Text hashing + File checksum calculation
-
-Dark Theme GUI with modern design
-
-Clipboard Copy Button for output
-
-Status Bar for real-time progress
-
-Keyboard Shortcuts:
-
-F5 → Process
-
-Esc → Clear fields
-
-🛠 Troubleshooting
-If GUI doesn’t launch, ensure you’re running Python 3.8+.
-
-On Linux, you may need to install Tkinter manually:
-
-bash
-Copy code
-sudo apt-get install python3-tk
-MD5 is one-way → cannot decrypt hashed values.
-
-yaml
-Copy code
+* **MD5 is one-way** → cannot decrypt hashed values.  
